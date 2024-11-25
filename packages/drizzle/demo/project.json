@@ -8,7 +8,7 @@
       "executor": "nx:run-commands",
       "options": {
         "cwd": "packages/drizzle/demo",
-        "command": "copyfiles -u 5 ../../../node_modules/sql.js/dist/sql-wasm.wasm ./public/assets"
+        "command": "copyfiles -u 6 ../../../node_modules/sql.js/dist/sql-wasm.wasm ./public/assets"
       }
     },
     "serve": {
