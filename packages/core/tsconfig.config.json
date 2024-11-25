@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "./*.ts"
+  ],
+  "compilerOptions": {
+    // Modules
+    //--------------------------------------------------
+
+    "module": "commonjs",
+    "types": [
+      "node"
+    ],
+
+    // Emit
+    //--------------------------------------------------
+
+    "noEmit": true
+  }
+}

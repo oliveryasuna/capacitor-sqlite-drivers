@@ -1,0 +1,68 @@
+{
+  "compilerOptions": {
+    // Type checking
+    //--------------------------------------------------
+
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "useUnknownInCatchVariables": true,
+
+    // Modules
+    //--------------------------------------------------
+
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "paths": {
+      "@oliveryasuna/capacitor-sqlite-core": ["./packages/core/src/index.ts"],
+      "@oliveryasuna/capacitor-sqlite-drizzle": ["./packages/drizzle/src/index.ts"]
+    },
+    "resolveJsonModule": true,
+
+    // Emit
+    //--------------------------------------------------
+
+    "declaration": true,
+    "importHelpers": true,
+
+    // Interop constraints
+    //--------------------------------------------------
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Language and environment
+    //--------------------------------------------------
+
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [],
+    "target": "ES2015",
+
+    // Projects
+    //--------------------------------------------------
+
+    "incremental": true,
+
+    // Completeness
+    //--------------------------------------------------
+
+    "skipLibCheck": true
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "name": "drizzle-demo",
+  "sourceRoot": "packages/drizzle/demo/src",
+  "projectType": "application",
+  "targets": {
+    "copy-sql-wasm": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/drizzle/demo",
+        "command": "copyfiles -u 5 ../../../node_modules/sql.js/dist/sql-wasm.wasm ./public/assets"
+      }
+    },
+    "serve": {
+      "dependsOn": ["copy-sql-wasm"]
+    },
+    "build": {
+      "dependsOn": ["copy-sql-wasm"],
+      "outputPath": "packages/drizzle/demo/dist"
+    },
+    "cap-open": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/drizzle/demo"
+      },
+      "configurations": {
+        "android": {
+          "command": "cap open android"
+        },
+        "ios": {
+          "command": "cap open ios"
+        }
+      }
+    },
+    "cap-sync-android-prod-1": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["build"],
+      "options": {
+        "cwd": "packages/drizzle/demo",
+        "command": "cap sync android"
+      }
+    },
+    "cap-sync-ios-prod-1": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["build"],
+      "options": {
+        "cwd": "packages/drizzle/demo",
+        "command": "cap sync ios"
+      }
+    },
+    "cap-sync-android-dev-1": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/drizzle/demo",
+        "env": {
+          "MODE": "development",
+          "PLATFORM": "android"
+        },
+        "command": "cap sync android"
+      }
+    },
+    "cap-sync-ios-dev-1": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "packages/drizzle/demo",
+        "env": {
+          "MODE": "development",
+          "PLATFORM": "ios"
+        },
+        "command": "cap sync ios"
+      }
+    },
+    "cap-sync-android-prod": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["cap-sync-android-prod-1"],
+      "options": {
+        "cwd": "packages/drizzle/demo",
+        "commands": [
+          "rm ./android/app/src/main/assets/public/package.json",
+          "rm ./android/app/src/main/assets/public/assets/sql-wasm.wasm"
+        ]
+      }
+    },
+    "cap-sync-ios-prod": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["cap-sync-ios-prod-1"],
+      "options": {
+        "cwd": "packages/drizzle/demo",
+        "commands": [
+          "rm ./ios/App/App/public/package.json",
+          "rm ./ios/App/App/public/assets/sql-wasm.wasm"
+        ]
+      }
+    },
+    "cap-sync-android-dev": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["cap-sync-android-dev-1"],
+      "options": {
+        "cwd": "packages/drizzle/demo",
+        "commands": [
+          "rm ./android/app/src/main/assets/public/package.json",
+          "rm ./android/app/src/main/assets/public/assets/sql-wasm.wasm"
+        ]
+      }
+    },
+    "cap-sync-ios-dev": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["cap-sync-ios-dev-1"],
+      "options": {
+        "cwd": "packages/drizzle/demo",
+        "commands": [
+          "rm ./ios/App/App/public/package.json",
+          "rm ./ios/App/App/public/assets/sql-wasm.wasm"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

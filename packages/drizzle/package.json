@@ -1,0 +1,11 @@
+{
+  "name": "@oliveryasuna/capacitor-sqlite-drizzle",
+  "version": "1.0.0",
+  "dependencies": {
+    "@oliveryasuna/capacitor-sqlite-core": "workspace:*"
+  },
+  "peerDependencies": {
+    "@capacitor-community/sqlite": "^6.0.2",
+    "drizzle-orm": "^0.36.4"
+  }
+}

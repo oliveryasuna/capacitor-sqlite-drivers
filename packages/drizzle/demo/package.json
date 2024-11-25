@@ -1,0 +1,14 @@
+{
+  "name": "drizzle-demo",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@capacitor-community/sqlite": "6.0.2",
+    "@capacitor/android": "6.2.0",
+    "@capacitor/ios": "6.2.0",
+    "@capacitor/core": "6.2.0",
+    "@capacitor/splash-screen": "6.0.3",
+    "@oliveryasuna/capacitor-sqlite-drizzle": "workspace:*",
+    "jeep-sqlite": "2.8.0"
+  }
+}

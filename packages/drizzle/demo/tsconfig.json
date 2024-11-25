@@ -1,0 +1,19 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "files": [],
+  "include": [],
+  "references": [
+    {"path": "./tsconfig.config.json"},
+    {"path": "./tsconfig.app.json"}
+  ],
+  "compilerOptions": {
+    // Language and environment
+    //--------------------------------------------------
+
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ]
+  }
+}
