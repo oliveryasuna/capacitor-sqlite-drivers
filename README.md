@@ -17,7 +17,7 @@
 
 This project will take a lot of time and effort to maintain.
 If you want to support it, you can do so through
-[Open Collective](https://opencollective.com/capacitor-sqlite-drivers).
+[GitHub](https://github.com/sponsors/oliveryasuna).
 
 ## Maintainers
 
@@ -44,4 +44,4 @@ See [LICENSE](./LICENSE) for details.
 
 This project will take a lot of time and effort to maintain.
 If you want to support it, you can do so through
-[Open Collective](https://opencollective.com/capacitor-sqlite-drivers).
+[GitHub](https://github.com/sponsors/oliveryasuna).
