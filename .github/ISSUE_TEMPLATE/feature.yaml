@@ -1,0 +1,21 @@
+name: Feature Request
+description: Suggest a new feature or enhancement.
+title: "[FEATURE]: "
+
+body:
+  - type: checkboxes
+    id: pre-report-checklist
+    attributes:
+      label: Pre-Report Checklist
+      options:
+        - label: I have searched the existing issues for duplicates.
+          required: true
+        - label: I have checked the documentation for a solution.
+          required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of the feature you are requesting.
+    validations:
+      required: true

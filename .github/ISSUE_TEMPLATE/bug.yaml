@@ -1,0 +1,77 @@
+name: Bug Report
+description: Report an issue or possible bug.
+title: "[BUG]: "
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug!
+        Please fill out the information below to help us investigate the issue.
+  - type: checkboxes
+    id: pre-report-checklist
+    attributes:
+      label: Pre-Report Checklist
+      options:
+        - label: I have searched the existing issues for duplicates.
+          required: true
+        - label: I have checked the documentation for a solution.
+          required: true
+  - type: dropdown
+    id: orm-name
+    attributes:
+      label: ORM Name
+      description: The ORM you are using.
+      options:
+        - Drizzle
+        - Knex
+        - Kysely
+        - Prisma
+        - Sequelize
+        - TypeORM
+    validations:
+      required: true
+  - type: input
+    id: orm-version
+    attributes:
+      label: ORM Version
+      description: The version of the ORM you are using.
+    validations:
+      required: true
+  - type: input
+    id: driver-version
+    attributes:
+      label: Driver Version
+      description: The version of the database driver you are using.
+    validations:
+      required: true
+  - type: input
+    id: capacitor-version
+    attributes:
+      label: Capacitor Version
+      description: The version of Capacitor you are using.
+    validations:
+      required: true
+  - type: input
+    id: capacitor-sqlite-version
+    attributes:
+      label: Capacitor SQLite Version
+      description: The version of the Capacitor SQLite plugin you are using.
+    validations:
+      required: true
+  - type: checkboxes
+    id: platform
+    attributes:
+      label: Platform
+      description: The platform you are using.
+      options:
+        - label: iOS
+        - label: Android
+        - label: Web
+  - type: textarea
+    id: bug
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of the bug.
+    validations:
+      required: true
