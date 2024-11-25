@@ -7,8 +7,8 @@
 | [Drizzle](https://github.com/drizzle-team/drizzle-orm) | `@oliveryasuna/capacitor-sqlite-drizzle`   | In-progress |
 | [Knex](https://github.com/knex/knex)                   | `@oliveryasuna/capacitor-sqlite-knex`      | Planned     |
 | [Kysely](https://github.com/kysely-org/kysely)         | `@oliveryasuna/capacitor-sqlite-kysely`    | Planned     |
-| [Prisma](https://github.com/prisma/prisma)             | `@oliveryasuna/capacitor-sqlite-prisma`    | Planned     |
-| [Sequelize](https://github.com/sequelize/sequelize)    | `@oliveryasuna/capacitor-sqlite-sequelize` | Planned     |
+| [Prisma](https://github.com/prisma/prisma)             | `@oliveryasuna/capacitor-sqlite-prisma`    | Relevant?   |
+| [Sequelize](https://github.com/sequelize/sequelize)    | `@oliveryasuna/capacitor-sqlite-sequelize` | Relevant?   |
 | [TypeORM](https://github.com/typeorm/typeorm)          | `@oliveryasuna/capacitor-sqlite-typeorm`   | Planned¹    |
 
 ¹TypeORM currently has partial support for Capacitor SQLite.
