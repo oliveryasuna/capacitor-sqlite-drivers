@@ -4,7 +4,7 @@
 
 | ORM                                                    | Package                                    | Status      |
 |--------------------------------------------------------|--------------------------------------------|-------------|
-| [Drizzle](https://github.com/drizzle-team/drizzle-orm) | `@oliveryasuna/capacitor-sqlite-drizzle`   | In-progress |
+| [Drizzle ORM](https://github.com/drizzle-team/drizzle-orm) | `@oliveryasuna/capacitor-sqlite-drizzle`   | In-progress |
 | [Knex](https://github.com/knex/knex)                   | `@oliveryasuna/capacitor-sqlite-knex`      | Planned     |
 | [Kysely](https://github.com/kysely-org/kysely)         | `@oliveryasuna/capacitor-sqlite-kysely`    | Planned     |
 | [TypeORM](https://github.com/typeorm/typeorm)          | `@oliveryasuna/capacitor-sqlite-typeorm`   | Planned¹    |
