@@ -77,21 +77,6 @@ if the feature has already been suggested.
 When you are creating a pull request, please include as many details as
 possible.
 
-### Development
-
-1. Fork the repository.
-2. Clone the forked repository.
-3. Create a new branch.
-4. Make your changes.
-5. Test your changes.
-6. Commit your changes.
-7. Push your changes.
-8. Create a pull request.
-9. Wait for the maintainers to review your pull request.
-10. Make changes if requested.
-11. Wait for the maintainers to merge your pull request.
-12. Celebrate your contribution!
-
 <!-- omit in toc -->
 ## Attribution
 This guide is based on [contributing.md](https://contributing.md/generator).
