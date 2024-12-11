@@ -1,5 +1,11 @@
 # Capacitor SQLite Drivers
 
+> PLEASE READ
+>
+> This project is a work in progress, and I fully understand the large scope and challenges it entails.
+> I'm committed to it's development and will actively continue work after the holiday season.
+> Thank you for your interest and patience as I build towards something impactful!
+
 [Capacitor SQLite](https://github.com/capacitor-community/sqlite) drivers for various ORMs.
 
 | ORM                                                    | Package                                    | Status      |
