@@ -9,6 +9,10 @@
 > UPDATE 25.02.01
 >
 > Work will continue this month.
+>
+> UPDATE 25.03.14
+>
+> We're determining the best way to organize this project and will continue work soon.
 
 [Capacitor SQLite](https://github.com/capacitor-community/sqlite) drivers for various ORMs.
 
